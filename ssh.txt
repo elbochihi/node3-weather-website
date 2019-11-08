@@ -1,0 +1,12 @@
+ssh-keygen -t rsa -b 4096 -C "loopparkour@gmail.com"
+
+ls -a -l ~/.ssh
+
+eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+drwxr-xr-x 1 Rudy 197121    0 nov.  8 12:47 ./
+drwxr-xr-x 1 Rudy 197121    0 nov.  8 12:47 ../
+-rw-r--r-- 1 Rudy 197121 3389 nov.  8 12:47 id_rsa
+-rw-r--r-- 1 Rudy 197121  747 nov.  8 12:47 id_rsa.pub
